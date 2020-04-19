@@ -1,0 +1,4 @@
+select Member.memberid, firstname, lastname,
+from Member 
+inner join Entry on Member.memberid = Entry.memberid
+where Entry.year != 2014;
